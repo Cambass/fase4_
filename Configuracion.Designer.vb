@@ -27,6 +27,8 @@ Partial Class Configuracion
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BtnDel = New System.Windows.Forms.Button()
         Me.BtnUpd = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.BtnIns = New System.Windows.Forms.Button()
         CType(Me.DtReg, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -41,7 +43,7 @@ Partial Class Configuracion
         '
         'BtCons
         '
-        Me.BtCons.Location = New System.Drawing.Point(145, 389)
+        Me.BtCons.Location = New System.Drawing.Point(117, 389)
         Me.BtCons.Name = "BtCons"
         Me.BtCons.Size = New System.Drawing.Size(94, 33)
         Me.BtCons.TabIndex = 1
@@ -52,7 +54,7 @@ Partial Class Configuracion
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(255, 36)
+        Me.Label1.Location = New System.Drawing.Point(255, 22)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(359, 20)
         Me.Label1.TabIndex = 2
@@ -60,7 +62,7 @@ Partial Class Configuracion
         '
         'BtnDel
         '
-        Me.BtnDel.Location = New System.Drawing.Point(330, 389)
+        Me.BtnDel.Location = New System.Drawing.Point(287, 389)
         Me.BtnDel.Name = "BtnDel"
         Me.BtnDel.Size = New System.Drawing.Size(100, 33)
         Me.BtnDel.TabIndex = 3
@@ -69,18 +71,39 @@ Partial Class Configuracion
         '
         'BtnUpd
         '
-        Me.BtnUpd.Location = New System.Drawing.Point(526, 389)
+        Me.BtnUpd.Location = New System.Drawing.Point(463, 389)
         Me.BtnUpd.Name = "BtnUpd"
         Me.BtnUpd.Size = New System.Drawing.Size(88, 33)
         Me.BtnUpd.TabIndex = 4
         Me.BtnUpd.Text = "Modificar"
         Me.BtnUpd.UseVisualStyleBackColor = True
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(49, 51)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(565, 19)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "* para eliminar, seleccione la celda del ID del registro a eliminar y presione el" &
+    " botón Eliminar"
+        '
+        'BtnIns
+        '
+        Me.BtnIns.Location = New System.Drawing.Point(614, 389)
+        Me.BtnIns.Name = "BtnIns"
+        Me.BtnIns.Size = New System.Drawing.Size(90, 33)
+        Me.BtnIns.TabIndex = 6
+        Me.BtnIns.Text = "Ingresar"
+        Me.BtnIns.UseVisualStyleBackColor = True
+        '
         'Configuracion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.BtnIns)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.BtnUpd)
         Me.Controls.Add(Me.BtnDel)
         Me.Controls.Add(Me.Label1)
@@ -99,4 +122,6 @@ Partial Class Configuracion
     Friend WithEvents Label1 As Label
     Friend WithEvents BtnDel As Button
     Friend WithEvents BtnUpd As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents BtnIns As Button
 End Class

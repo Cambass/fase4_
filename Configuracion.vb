@@ -50,4 +50,38 @@ Public Class Configuracion
 
 
     End Sub
+
+    Private Sub BtnUpd_Click(sender As Object, e As EventArgs) Handles BtnUpd.Click
+        Conexion.ConnectionString = "Server=localhost;Database=fase4;Uid=root;password=;"
+        Sql = "UPDATE `usuario` SET Nombre='" & DtReg.CurrentRow.Cells(1).Value & "', Programa ='" & DtReg.CurrentRow.Cells(2).Value & " ', Semestre ='" & DtReg.CurrentRow.Cells(3).Value & "', Usuario='" & DtReg.CurrentRow.Cells(4).Value & "', Contraseña ='" & DtReg.CurrentRow.Cells(5).Value & "' WHERE Id = '" & DtReg.CurrentRow.Cells(0).Value & "'"
+        Conexion.Open()
+        Cmd = New MySqlCommand(Sql, Conexion)
+        Cmd.ExecuteNonQuery()
+
+        Sql = "select * from usuario "
+        DataAdapter = New MySqlDataAdapter(Sql, Conexion)
+        DataSet.Clear()
+        DataAdapter.Fill(DataSet, "registros")
+        DtReg.DataSource = DataSet
+        DtReg.DataMember = "registros"
+        Conexion.Close()
+        MsgBox("Dato Modificado")
+    End Sub
+
+    Private Sub BtnIns_Click(sender As Object, e As EventArgs) Handles BtnIns.Click
+        Conexion.ConnectionString = "Server=localhost;Database=fase4;Uid=root;password=;"
+        Sql = "INSERT INTO usuario(Nombre, Programa, Semestre, Usuario, Contraseña) VALUES ('" & DtReg.CurrentRow.Cells(1).Value & "','" & DtReg.CurrentRow.Cells(2).Value & "','" & DtReg.CurrentRow.Cells(3).Value & "','" & DtReg.CurrentRow.Cells(4).Value & "','" & DtReg.CurrentRow.Cells(5).Value & "')"
+        Conexion.Open()
+        Cmd = New MySqlCommand(Sql, Conexion)
+        Cmd.ExecuteNonQuery()
+
+        Sql = "select * from usuario "
+        DataAdapter = New MySqlDataAdapter(Sql, Conexion)
+        DataSet.Clear()
+        DataAdapter.Fill(DataSet, "registros")
+        DtReg.DataSource = DataSet
+        DtReg.DataMember = "registros"
+        Conexion.Close()
+        MsgBox("Dato Modificado")
+    End Sub
 End Class

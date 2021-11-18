@@ -33,7 +33,6 @@ Partial Class Principal
         Me.CiclosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfiguraciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultarEstudianteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EditarEstudianteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
@@ -119,7 +118,7 @@ Partial Class Principal
         '
         'ConfiguraciónToolStripMenuItem
         '
-        Me.ConfiguraciónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConsultarEstudianteToolStripMenuItem, Me.EditarEstudianteToolStripMenuItem})
+        Me.ConfiguraciónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConsultarEstudianteToolStripMenuItem})
         Me.ConfiguraciónToolStripMenuItem.Name = "ConfiguraciónToolStripMenuItem"
         Me.ConfiguraciónToolStripMenuItem.Size = New System.Drawing.Size(106, 23)
         Me.ConfiguraciónToolStripMenuItem.Text = "Configuración"
@@ -129,12 +128,6 @@ Partial Class Principal
         Me.ConsultarEstudianteToolStripMenuItem.Name = "ConsultarEstudianteToolStripMenuItem"
         Me.ConsultarEstudianteToolStripMenuItem.Size = New System.Drawing.Size(205, 24)
         Me.ConsultarEstudianteToolStripMenuItem.Text = "Consultar Estudiante"
-        '
-        'EditarEstudianteToolStripMenuItem
-        '
-        Me.EditarEstudianteToolStripMenuItem.Name = "EditarEstudianteToolStripMenuItem"
-        Me.EditarEstudianteToolStripMenuItem.Size = New System.Drawing.Size(205, 24)
-        Me.EditarEstudianteToolStripMenuItem.Text = "Editar Estudiante"
         '
         'Principal
         '
@@ -170,5 +163,4 @@ Partial Class Principal
     Friend WithEvents CiclosToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ConfiguraciónToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConsultarEstudianteToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents EditarEstudianteToolStripMenuItem As ToolStripMenuItem
 End Class
