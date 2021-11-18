@@ -32,6 +32,7 @@ Partial Class Inicio
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'BtIng
@@ -45,7 +46,7 @@ Partial Class Inicio
         '
         'BtReg
         '
-        Me.BtReg.Location = New System.Drawing.Point(154, 352)
+        Me.BtReg.Location = New System.Drawing.Point(154, 362)
         Me.BtReg.Name = "BtReg"
         Me.BtReg.Size = New System.Drawing.Size(103, 32)
         Me.BtReg.TabIndex = 1
@@ -118,17 +119,27 @@ Partial Class Inicio
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.Location = New System.Drawing.Point(159, 314)
+        Me.Label6.Location = New System.Drawing.Point(159, 324)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(88, 20)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "Registrarse"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(-6, 295)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(599, 19)
+        Me.Label7.TabIndex = 10
+        Me.Label7.Text = "==========================================================="
         '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(453, 418)
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -140,6 +151,7 @@ Partial Class Inicio
         Me.Controls.Add(Me.BtReg)
         Me.Controls.Add(Me.BtIng)
         Me.Name = "Inicio"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -156,4 +168,5 @@ Partial Class Inicio
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
 End Class

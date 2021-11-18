@@ -1,0 +1,27 @@
+Los ciclos o bucles de programación (también denominados estructuras de control iterativas o repetitivas) son sentencias que se utilizan para ejecutar una o varias instrucciones de forma repetitiva cuando sea necesario.
+
+El funcionamiento es más sencillo de lo que parece, ya que estas estructuras están controladas por ciertas variables o condiciones. De esa manera es posible tener un control de la cantidad de repeticiones y así evitar la aparición de bucles infinitos.
+No obstante, existen varios tipos de ciclos de programación y cada uno de ellos tiene su propia finalidad.
+
+Tipos de ciclos de programación
+Es posible hallar tres estructuras de control repetitivas: while, do-while y for. El uso dependerá de las necesidades del desarrollador y el programa en cuestión, por lo que es importante entender cómo funciona cada una de ellas.
+
+Ciclo for
+En español se traduce como “ciclo para” y es uno de los bucles más utilizados en la programación gracias a su estructuración, ya que permite determinar el número de repeticiones a realizar (además, es necesario conocer dicho valor para su uso). El mismo está compuesto por cuatro parámetros:
+Variable de inicio del ciclo: es donde se comenzará a ejecutar.
+Condición o límite del ciclo: sirve como determinante de la continuidad o finalización del ciclo. Solo se repite en caso de que la condición sea verdadera.
+Modificador: se encargará de modificar la variable cuando sea necesario.
+Cuerpo: donde se añaden las instrucciones a repetir, pudiendo ser una o varias.
+
+Ciclo while
+El ciclo de programación while (que se traduce como “ciclo mientras”) permite establecer una condición donde se repetirán las instrucciones hasta que dicha condición no se cumpla.
+
+A diferencia del ciclo anterior, este no cuenta con un valor inicial o final, solo está compuesto por la condición. Sin embargo, es necesario añadir una sentencia que finalice el ciclo.
+
+Este bucle se utiliza cuando se desea repetir ciertas instrucciones un número indeterminado de veces hasta que no se cumpla la condición.
+
+Ciclo do-while
+Se traduce como “repetir mientras”. A diferencia del bucle anterior, el bucle do-while primero ejecuta las instrucciones y luego hace la comprobación de la condición especificada, lo que significa que se ejecutará al menos una vez. En otras palabras, las acciones se realizarán hasta que se cumpla la condición.
+
+Un claro ejemplo es un programa en el que se debe ingresar una cantidad determinada (digamos que del 1 al 5). Si el usuario añade un número fuera de dicho rango la aplicación le seguirá pidiendo un número.
+
